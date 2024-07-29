@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "barlow", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --backgorund-blue: #f3fcff;
+  --header-color: #f8f8f8;
+  --font-color: #1a4b5a;
+  --sahra-blue: #4fa5bf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Evita que o conteúdo vaze horizontalmente */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+  width: 100%; /* Garante que o body ocupe 100% da largura */
+}
+
+body {
+  background-color: var(--backgorund-blue);
+  color: var(--font-color);
+}
+
+#header {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/BG-PAGINA\ INICIAL.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-container {
+  padding: 10px 10%;
+  background-color: var(--header-color);
+  justify-content: right;
+  opacity: 0.8;
+}
+
+.nav-container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -10%;
+}
+
+.nav-container img {
+  width: 15%;
+  margin-left: -10%;
+}
+
+.nav-container ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+
+.nav-container ul li a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav-container ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--font-color);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.nav-container ul li a:hover::after {
+  width: 100%;
+}
+
+.first-page {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  margin-left: 5%;
+  margin-top: 10%;
+  font-size: 18px;
+  color: var(--font-color);
+}
+.header-text h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  color: var(--font-color);
+}
+
+.header-text h2 {
+  font-family: "barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 54px;
+}
+
+.header-text button {
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 200;
+  background-color: var(--font-color);
+  color: var(--backgorund-blue);
+  font-size: 1.2rem;
+  box-shadow: 3px 3px 10px #1a4b5a;
+}
+
+.header-text button:hover {
+  background-color: #4fa5bf;
+}
+
+.img-header {
+  display: inline-block;
+  margin: 6.5rem 4rem 0px 0px;
+  position: relative;
+}
+
+.img-header img {
+  width: 16rem;
+}
+
+.soteh {
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: transform 0.5s;
+}
+.simoh {
+  cursor: pointer;
+  transform: translateX(30px);
+  transition: transform 0.5s;
+}
+
+.sahra {
+  cursor: pointer;
+  transform: translateX(-30px);
+  transition: transform 0.5s ease;
+}
+
+.sahra:hover {
+  transform: translateX(-30px) translateY(-1.5rem);
+}
+
+.soteh:hover {
+  transform: translateY(100px) translateY(-1.5rem);
+}
+.simoh:hover {
+  transform: translateX(30px) translateY(-1.5rem);
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--font-color);
+  width: 100%;
+  height: 30vh;
+}
+.divider h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 200;
+  font-size: 46px;
+  color: var(--backgorund-blue);
+}
+
+.divider .decoration {
+  display: flex;
+  position: absolute;
+  margin-top: 13rem;
+  background-color: var(--font-color);
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+}
+
+#about-section {
+  background-image: url(./assets/BG-COMO\ SURGIU.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Adiciona um pouco de espaçamento ao redor */
+}
+
+.container-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1000px; /* Ajuste o valor conforme necessário */
+}
+
+.text-about {
+  padding: 10px;
+  flex: 2;
+  display: flex;
+  flex-direction: column; /* Alinha o conteúdo em colunas */
+  justify-content: center;
+  align-items: flex-start; /* Alinha o texto à esquerda */
+}
+.text-about p {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+.text-about p strong {
+  font-family: "barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-about p:first-child {
+  padding-bottom: 2rem;
+}
+
+.img-about {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Alinha o conteúdo em colunas */
+  justify-content: center;
+  align-items: flex-end; /* Alinha o texto à esquerda */
+}
+
+.img-about img {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.roberto:hover,
+.lucca:hover {
+  transform: translateX(-30px) translateY(-1.5rem);
+}
+.divider img {
+  width: 8rem;
+  height: 1.2rem;
+  margin: 0.6rem 0 0 0;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.sahra-section {
+  margin-left: -40rem;
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em uma coluna */
+  align-items: center; /* Centraliza horizontalmente os elementos */
+  padding: 10px; /* Adiciona espaçamento ao redor da seção */
+}
+
+.services-container img {
+  width: 8rem;
+  height: 7rem;
+  margin: 80px;
+  display: flex;
+  place-items: center;
+  align-items: center;
+}
+
+.service-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-title h1 {
+  display: flex;
+  font-family: "costa", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+  color: var(--sahra-blue);
+}
+
+.service-title h2 {
+  font-family: "costa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.services-container p {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  font-family: "barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sahra-section p {
+  color: #1a4b5a;
+
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 14rem;
+  margin-top: 5px;
+}
+
+.banner-sahra p {
+  color: var(--backgorund-blue);
+  text-align: center;
+  font-family: Muli;
+  font-size: 32px;
+  font-style: normal;
+  display: inline;
+}
+
+.banner-sahra {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 130px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(112, 164, 189, 0.7) 0%,
+    rgba(26, 75, 90, 0.7) 100%
+  );
+  box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.25);
+
+  margin: 3% 0 3% 0;
+}
+.img-services{
+  background-image: url(/assets/cover\ 1.png) ;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30rem;
+  height: 30rem;
+  margin: -3% 0 5% 0;
+}
