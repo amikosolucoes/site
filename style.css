@@ -12,8 +12,11 @@
   --sahra-blue-card: #f7fbfa;
   --sahra-card-hover: #b0d6dc;
   --simoh-green: #2abe6c;
-  --simoh-green-card:#E5F1E5;
-  --simoh-card-hover: #99BA99;
+  --simoh-green-card: #e5f1e5;
+  --simoh-card-hover: #99ba99;
+  --soteh-orange: #f6aa56;
+  --soteh-orange-card: #ffedda;
+  --soteh-orange-card-hover: #f8c38b;
 }
 
 html {
@@ -365,8 +368,6 @@ body {
     rgba(26, 75, 90, 0.7) 100%
   );
   box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.25);
-
- 
 }
 .img-services {
   background-image: url(/assets/cover\ 1.png);
@@ -397,6 +398,7 @@ body {
   height: 15rem;
   cursor: pointer;
   transition: transform 0.5s background;
+  text-align: center;
 }
 
 .card-sahra h3 {
@@ -458,22 +460,24 @@ body {
   gap: 15px;
   margin: 3% 0 3% 0;
   border-radius: 30px;
-  background: linear-gradient(90deg, rgba(112, 189, 112, 0.70) 0%, rgba(18, 99, 18, 0.70) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(112, 189, 112, 0.7) 0%,
+    rgba(18, 99, 18, 0.7) 100%
+  );
   box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.banner-simoh p{
-
+.banner-simoh p {
   color: var(--backgorund-blue);
   text-align: center;
   font-family: Muli;
   font-size: 32px;
   font-style: normal;
   display: inline;
-
 }
 
-.img-simoh{
+.img-simoh {
   background-image: url(./assets/SIMOH_Trilha_Azul\ 1.png);
   background-size: contain;
   background-position: center;
@@ -496,6 +500,7 @@ body {
   height: 15rem;
   cursor: pointer;
   transition: transform 0.5s background;
+  text-align: center;
 }
 
 .card-simoh h3 {
@@ -520,7 +525,7 @@ body {
   background-color: var(--simoh-card-hover);
 }
 
-.card-icon-simoh{
+.card-icon-simoh {
   position: relative;
   display: flex;
   justify-content: center;
@@ -537,4 +542,143 @@ body {
   height: 50%;
   padding: 0;
   margin: 0;
+}
+
+/* SOTEH */
+
+.banner-soteh {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 130px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 3% 0 3% 0;
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(253, 178, 95, 0.6) 0%,
+    rgba(237, 124, 0, 0.7) 100%
+  );
+  box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.banner-soteh p {
+  color: var(--backgorund-blue);
+  text-align: center;
+  font-family: Muli;
+  font-size: 32px;
+  font-style: normal;
+  display: inline;
+}
+.img-soteh {
+  background-image: url(./assets/img-soteh.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 20rem;
+  margin: 2% 0 5% 0;
+}
+
+.card-soteh {
+  border-radius: 10px;
+  background: var(--soteh-orange-card);
+  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+  margin: 20px;
+  height: 15rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card-soteh p {
+  display: inline;
+  color: var(--font-color);
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+.card-soteh h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  font-size: 15px;
+  padding: 3%;
+}
+
+.card-soteh:hover {
+  transform: translateY(-1.5rem);
+  background-color: var(--soteh-orange-card-hover);
+}
+
+.card-icon-soteh {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--soteh-orange);
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+.card-icon-soteh img {
+  width: 50%;
+  height: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.divider-gradient {
+  width: 100vw;
+  height: 2.5rem;
+  background: linear-gradient(90deg, #4fa5bf 0%, #ed7c00 100%);
+}
+#partners h1 {
+  padding: 5% 0 1% 5%;
+  font-family: Arbotek;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.carrossel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carrossel-container {
+  display: flex;
+  animation: deslizar 20s linear infinite; /* Animação linear e infinita */
+}
+.logo {
+  min-width: 100px; /* Largura mínima dos logos */
+  padding: 10px;
+  margin-left: 10%;
+}
+
+.logo img {
+  width: 10rem;
+  height: 10rem;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(0); /* Início da animação */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Desliza a metade dos elementos para a esquerda */
+  }
 }
