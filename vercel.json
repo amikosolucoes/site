@@ -8,6 +8,7 @@
       { "source": "/termos", "destination": "/terms.html" },
       { "source": "/report", "destination": "/report-questionnaire.html" },
       { "source": "/gerencial", "destination": "/management-report.html" },
-      { "source": "/gerencial-hsl", "destination": "/management-report-hsl.html" }
+      { "source": "/gerencial-hsl", "destination": "/management-report-hsl.html" },
+      { "source": "/gerencial-scmp", "destination": "/management-report-scmp.html" }
     ]
   }
